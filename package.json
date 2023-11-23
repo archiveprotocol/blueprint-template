@@ -1,0 +1,40 @@
+{
+  "name": "template-blueprint-public",
+  "version": "1.0.0",
+  "main": "dist/simpleBlueprint.js",
+  "repository": "git@gitlab.com:acadia-studio/template-blueprint-public.git",
+  "author": "gabrielfior <gabe@apy.vision>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.2.1",
+    "bignumber.js": "^9.1.1",
+    "log4js": "^6.7.1",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev:getUserTransactions": "ts-node ./scripts/getUserTransactions.ts",
+    "dev:classifyTransaction": "ts-node ./scripts/classifyTransaction.ts",
+    "dev:getCurrentPositionValue": "ts-node ./scripts/getCurrentPositionValue.ts",
+    "dev:getUserList": "ts-node ./scripts/getUserList.ts",
+    "dev:getPositionValueAt": "ts-node ./scripts/getPositionValueAt.ts",
+    "publish-archive": "npm run build && git push origin main",
+    "test": "jest",
+    "lint": "eslint \"src/**/*.ts\" --fix"
+  },
+  "devDependencies": {
+    "@golevelup/ts-jest": "^0.3.7",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/jest": "^29.5.1",
+    "jest": "^29.5.0",
+    "prettier": "2.8.8",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "eslint": "8.47.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-import": "2.28.1",
+    "eslint-plugin-prettier": "5.0.0",
+    "@typescript-eslint/eslint-plugin": "6.4.1",
+    "@typescript-eslint/parser": "6.4.1"
+  }
+}
