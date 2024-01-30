@@ -1,15 +1,17 @@
-import { MetadataStore } from './meta/metadataStore';
-import { BlueprintCategory } from './models/blueprintCategory';
-import { BlueprintContext } from './models/blueprintContext';
-import { Blueprint } from './models/blueprintInterface';
-import { BlueprintRequest } from './models/blueprintRequest';
-import { Classification } from './models/classification';
-import { OperationType } from './models/constants';
-import { PositionContext } from './models/positionContext';
-import { PositionValue } from './models/positionValue';
-import { TimeContext } from './models/timeContext';
-import { TransactionDetails } from './models/transactionDetails';
-import { UserTransactionResults } from './models/userTransactionResults';
+import {
+  Blueprint,
+  BlueprintRequest,
+  TransactionDetails,
+  BlueprintContext,
+  MetadataStore,
+  BlueprintCategory,
+  UserTransactionResults,
+  Classification,
+  OperationType,
+  PositionContext,
+  TimeContext,
+  PositionValue
+} from "blueprint-lib";
 
 export abstract class AbstractSimpleBlueprint implements Blueprint {
   protected static readonly FIRST_TXN_BLOCK = 16989112;

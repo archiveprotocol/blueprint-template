@@ -1,12 +1,15 @@
+import {
+  BlueprintContext,
+  TransactionDetails,
+  Classification,
+  Operation,
+  OperationType,
+  TokenInfo,
+  PositionShares,
+  TokenTag,
+  PositionValue
+} from 'blueprint-lib';
 import { AbstractSimpleBlueprint } from './abstractSimpleBlueprint';
-import { BlueprintContext } from './models/blueprintContext';
-import { Classification } from './models/classification';
-import { OperationType, TokenTag } from './models/constants';
-import { Operation } from './models/operation';
-import { PositionShares } from './models/positionShares';
-import { PositionValue } from './models/positionValue';
-import { TokenInfo } from './models/tokenInfo';
-import { TransactionDetails } from './models/transactionDetails';
 import BigNumber from 'bignumber.js';
 
 export default class MySimpleBlueprint extends AbstractSimpleBlueprint {

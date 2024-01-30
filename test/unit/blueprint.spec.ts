@@ -1,7 +1,4 @@
-import { BlockbydateAPI } from '../../src/models/blockbydateAPI';
-import { BlueprintCategory } from '../../src/models/blueprintCategory';
-import { BlueprintContext } from '../../src/models/blueprintContext';
-import { Blueprint } from '../../src/models/blueprintInterface';
+import { Blueprint, BlueprintContext, BlockbydateAPI, BlueprintCategory } from 'blueprint-lib';
 import MySimpleBlueprint from '../../src/simpleBlueprint';
 import { createMock } from '@golevelup/ts-jest';
 
