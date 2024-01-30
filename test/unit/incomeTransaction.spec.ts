@@ -1,15 +1,18 @@
 import { createMock } from "@golevelup/ts-jest";
 import BigNumber from "bignumber.js";
-import { BlockbydateAPI } from "../../src/models/blockbydateAPI";
-import { BlueprintContext } from "../../src/models/blueprintContext";
-import { Blueprint } from "../../src/models/blueprintInterface";
-import { Classification } from "../../src/models/classification";
-import { OperationType, TokenTag } from "../../src/models/constants";
-import { Operation } from "../../src/models/operation";
-import { PositionShares } from "../../src/models/positionShares";
-import { TokenInfo } from "../../src/models/tokenInfo";
-import { TransactionDetails } from "../../src/models/transactionDetails";
 import MySimpleBlueprint from "../../src/simpleBlueprint";
+import {
+  Blueprint,
+  BlueprintContext,
+  BlockbydateAPI,
+  Classification,
+  Operation,
+  TokenInfo,
+  PositionShares,
+  TransactionDetails,
+  OperationType,
+  TokenTag
+} from "blueprint-lib";
 
 describe('Simple Blueprint (INCOME)', () => {
   let blueprint: Blueprint;

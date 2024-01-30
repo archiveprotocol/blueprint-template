@@ -1,9 +1,6 @@
 import { createMock } from "@golevelup/ts-jest";
-import { BlockbydateAPI } from "../../src/models/blockbydateAPI";
-import { BlueprintContext } from "../../src/models/blueprintContext";
-import { Blueprint } from "../../src/models/blueprintInterface";
-import { UserTransactionResults } from "../../src/models/userTransactionResults";
 import MySimpleBlueprint from "../../src/simpleBlueprint";
+import { Blueprint, BlueprintContext, BlockbydateAPI, UserTransactionResults } from "blueprint-lib";
 
 describe('Simple Blueprint (User Transactions)', () => {
   let blueprint: Blueprint;
@@ -26,7 +23,7 @@ describe('Simple Blueprint (User Transactions)', () => {
     });
     blueprint = new MySimpleBlueprint(context);
   });
-  
+
   afterEach(() => jest.clearAllMocks());
 
   describe('getUserTransactions', () => {

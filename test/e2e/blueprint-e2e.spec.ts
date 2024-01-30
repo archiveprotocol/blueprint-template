@@ -1,8 +1,7 @@
-import { BlueprintContext } from '../../src/models/blueprintContext';
-import { Blueprint } from '../../src/models/blueprintInterface';
 import MySimpleBlueprint from '../../src/simpleBlueprint';
 import { createMock } from '@golevelup/ts-jest';
 import { beforeAll, expect } from '@jest/globals';
+import { Blueprint, BlueprintContext } from 'blueprint-lib';
 
 describe('blueprint e2e tests', () => {
   let blueprint: Blueprint;

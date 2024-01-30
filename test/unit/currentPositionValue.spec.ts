@@ -1,15 +1,16 @@
-import { BlockbydateAPI } from '../../src/models/blockbydateAPI';
-import { BlueprintContext } from '../../src/models/blueprintContext';
-import { Blueprint } from '../../src/models/blueprintInterface';
-import { PositionContext } from '../../src/models/positionContext';
-import { PositionShares } from '../../src/models/positionShares';
-import { PositionValue } from '../../src/models/positionValue';
-import { TimeContext } from '../../src/models/timeContext';
-import { TokenInfo } from '../../src/models/tokenInfo';
-import { UserProtocolPositionSnapshot } from '../../src/models/userProtocolPositionSnapshot.entity';
 import MySimpleBlueprint from '../../src/simpleBlueprint';
 import { createMock } from '@golevelup/ts-jest';
 import BigNumber from 'bignumber.js';
+import {
+  Blueprint,
+  BlueprintContext,
+  BlockbydateAPI,
+  PositionContext,
+  PositionValue,
+  PositionShares,
+  TokenInfo,
+  UserProtocolPositionSnapshot
+} from 'blueprint-lib';
 
 describe('Simple Blueprint (Current Position Value)', () => {
   let blueprint: Blueprint;
